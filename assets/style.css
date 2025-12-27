@@ -1,8 +1,8 @@
-*{font-family: sans-serif; list-style: none;}
+*{font-family:sans-serif;}
 body{display: grid;place-items: center;min-height: 100vh;}
 center{}
-h2, h3{font-size: 2.5vw;}
-form{
+h2, h3{font-size:2.5vw;}
+#formulario{
 	width: 30vw;display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -10,20 +10,16 @@ form{
 	margin: 1vw 0vw 1vw 0vw;
 }
 input, textarea, button{width: 90%;font-size: 1.3vw;padding: 0.5vw;}
-ul{
-	width:70vw;
-	background:#f2e2a2;
-	display:flex;
-	justify-content:center;
-	flex-direction:column;
-	align-items:center;
-	padding:0.5vw;
-}
+#lista{background: #f2e2a2;width:80vw;padding: 0;}
+li:nth-child(even){background-color: rgba(0, 0, 0, .28);}
+li{width: 100%;list-style-type: none;display: flex;}
+p{flex: 3;font-size: 1.5vw;display: flex;justify-content: center;}
 
 @media(max-width: 991px){
 	h2, h3{font-size: 5rem;}
-	form{width: 90vw;gap: 0.5vw;margin: 1vw 0vw 1vw 0vw;}
+	#formulario{width: 90vw;gap: 0.5vw;margin: 1vw 0vw 1vw 0vw;}
 	input, textarea, button{width: 90%;font-size: 3rem;padding: 2rem;}
 	button{padding: 3rem 0rem 3rem 0rem;}
-	ul{width: 90vw;;padding: 1rem; font-size: 2rem;font-weight: 900;}
+	#lista{width: 90vw;}
+	p{font-size: 2rem;}
 }

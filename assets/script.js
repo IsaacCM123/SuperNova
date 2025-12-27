@@ -28,9 +28,7 @@ async function cargarRegistros() {
 
   registros.forEach(r => {
     const li = document.createElement("li");
-    li.innerHTML =  `<strong>${r.hhhnombre}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            ${r.hhhedad}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            ${r.hhhcomentario}</strong>`;
+    li.innerHTML = `<p>${r.hhhnombre}</p><p>${r.hhhedad}</p><p>${r.hhhcomentario}</p>`;
     lista.appendChild(li);
   });
 }
